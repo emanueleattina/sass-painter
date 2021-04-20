@@ -1,0 +1,90 @@
+footer {
+    .first-footer {
+        padding: 40px 0;
+        background: $footer_first_bg;
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    ul {
+        list-style: none;
+        .footer-title {
+            font-size: 1em;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        li {
+            font-size: 0.75em;
+            a {
+                text-decoration: none;
+                color: $nero_txt;
+                cursor: pointer;
+                
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+        &.footer-social {
+            display: flex;
+            li {
+                height: 2em;
+                width: 2em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                &#ig {
+                    background: #E4405F;
+                }
+                &#fb {
+                    background: #3B5998;
+                }
+                &#tw {
+                    background: #1DA1F2;
+                }
+                &#yt {
+                    background: #CD201F;
+                }
+                &#pi {
+                    background: #BD081C;
+                }
+                &#rs {
+                    background: #ff8d00;
+                }
+                a {
+                    i {
+                        color: $bianco_txt;
+                    }
+                }
+            }
+        }
+    }
+    .second-footer {
+        background: $footer_second_bg;
+        padding: 20px 30px;
+        .footer-logos {
+            display: flex;
+            align-items: center;
+            li {
+                margin-right: 10px;
+            }
+        }
+        .footer-copyright {
+            display: flex;
+            align-items: center;
+            color: #999;
+            li {
+                margin-left: 15px;
+                &:hover {
+                    text-decoration: underline;
+                    color: $bianco_txt;
+                }
+            }
+            .copyright {
+                color: $bianco_txt;
+            }
+        }
+    }
+}

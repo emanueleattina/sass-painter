@@ -1,13 +1,13 @@
 main {
     section {
         background: $main_bg;
-        padding: 40px 0;
+        padding-top: 40px;
     }
 }
 
-.section-title {
+.section-big-title {
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 .card-container {
@@ -26,11 +26,61 @@ main {
         background: #fff;
 
         .card-description-title {
-            font-weight: 400;
+            font-weight: 500;
         }
 
         span {
             margin-bottom: 15px;
         }
+    }
+}
+
+.section-background {
+    display: flex;
+    flex-direction: column;
+    height: 325px;
+    &.purple {
+        background: $viola_section;
+        color: $bianco_txt;
+        padding: 50px 50px;
+    }
+    &.grey {
+        background: $grigio_scuro_section;
+        color: $bianco_txt;
+        padding: 50px 50px;
+    }
+    &.azzurro {
+        background: $azzurro_scuro_section;
+        color: $bianco_txt;
+        padding: 50px 50px;
+    }
+    .section-title {
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    .section-text {
+        font-size: 1.25em;
+        font-weight: 300;
+    }
+}
+
+.section-background {
+    &.purple-img {
+        background: url('../img/bg-section-2.1.jpg');
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &.grey-img {
+        background: url('../img/bg-section-2.2.jpg');
+        background-size: cover;
+    }
+    &.azzurro-img {
+        background: url('../img/bg-section-2.3.jpg');
+        background-size: cover;
+    }
+    img {
+        height: 80%;
     }
 }
